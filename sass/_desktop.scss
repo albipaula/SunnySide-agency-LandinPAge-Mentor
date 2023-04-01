@@ -1,0 +1,90 @@
+//Primary Colors 
+$red: hsl(7, 99%, 70%);
+$Yellow: hsl(51, 100%, 49%);
+$darkdesaturatedCyan: hsl(167, 40%, 24%); //graphic design text
+$darkBlue: hsl(198, 62%, 26%); // photography text
+$darkModerateCyan: hsl(168, 34%, 41%); //footer
+
+
+// Secondary colors
+
+
+$veryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+$veryDarkGrayishBlue: hsl(213, 9%, 39%);
+$darkGrayishBlue: hsl(232, 10%, 55%);
+$grayishBlue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+//Fonts 
+
+$primaryFont:  barlow;
+$secondaryFont: fraunces;
+
+@media screen and (min-width:484px) and (max-width:1440px) {
+
+.mobile-images {display: none;}
+.desktop-images {display:flex; }
+
+    .header {
+   
+   
+        background: url(/images/desktop/image-header.jpg)  no-repeat;
+        background-size: cover;
+        height: 60vh;
+        
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 150px;
+        
+        .header-menu-link , .header-menu-link--contact {
+            display: flex;
+         }
+    
+         .header-menu-hamburger {display: none;}
+       
+
+
+    
+}
+
+.flexContainer {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.flexItem2 {
+    order: 1;
+}
+.flexItem1 { order: 2;}
+.flexItem3{order: 3;}
+.flexItem4 {order: 4;}
+.flexItem5{order:5}
+.flexItem6 {order:6}
+
+
+
+.flexItem1, .flexItem2 , .flexItem3 , .flexItem4 , .flexItem5 , .flexItem6 {
+    width: 50%;
+    text-align: center;
+    align-self: center;
+}
+
+.gallery {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.flexContainer-testimonials {
+
+    display: flex; 
+    padding: 30px;
+
+
+}
+
+}

@@ -1,0 +1,62 @@
+//Primary Colors 
+$red: hsl(7, 99%, 70%);
+$Yellow: hsl(51, 100%, 49%);
+$darkdesaturatedCyan: hsl(167, 40%, 24%); //graphic design text
+$darkBlue: hsl(198, 62%, 26%); // photography text
+$darkModerateCyan: hsl(168, 34%, 41%); //footer
+
+
+// Secondary colors
+
+
+$veryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+$veryDarkGrayishBlue: hsl(213, 9%, 39%);
+$darkGrayishBlue: hsl(232, 10%, 55%);
+$grayishBlue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+//Fonts 
+
+$primaryFont:  barlow;
+$secondaryFont: fraunces;
+
+
+
+  
+
+
+.header-container {
+
+
+display: flex;
+
+
+
+
+
+.header-container-menu   {
+
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+flex-wrap: nowrap;
+
+
+a{
+
+color: $white;
+display: flex;
+text-decoration: none;
+justify-content: flex-end;
+padding: 30px;
+
+
+}
+}
+
+
+
+    
+}
+

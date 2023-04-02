@@ -26,22 +26,38 @@ $secondaryFont: 'Fraunces';
 .body { 
 
 width: 100%;
+
 overflow-x:hidden;
 font-size: 1,5rem;
+
+
    
 
 }
 
+.background { 
+
+    height: auto;
+    background: url(/images/mobile/image-header\ copy.jpg)  no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding-bottom: 15vh;
+    padding: 3vw;
+   
+    
+
+}
+
+
 .header {
    
    
-    background: url(/images/mobile/image-header.jpg) no-repeat;
-    background-size: contain;
-    height: 70vh;
+    
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     gap: 150px;
+    
     
 
 
@@ -137,6 +153,7 @@ justify-content: space-evenly;
     background:url(/images/mobile/image-graphic-design.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    
     color: $darkdesaturatedCyan;
     height: 500px;
     display: flex;
@@ -188,7 +205,7 @@ justify-content: space-evenly;
 
 
 
-.gallery {
+.gallery-mobile {
 
 display: grid;
 

@@ -12,7 +12,9 @@
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
 <body class="body">
-  <section class="header ">
+  <div class="background" >
+
+    <section class="header ">
    
     <nav class="header-menu">
       <li class="header-menu-logo"><img src="./images/logo.svg" alt="logo"></li>
@@ -29,12 +31,13 @@
         <div class="arrow-icon"><img src="/images/icon-arrow-down.svg" alt="" ></div>
 
       </div>
-  </section>
+    </section>
+  </div>
   <main  >
     <section class="flexContainer ">
       <div class="flexItem1"  > 
-        <img class="mobile-images" src="/images/mobile/image-transform.jpg" alt="image-transform" width="100%">
-        <img class="desktop-images" src="/images/desktop/image-transform.jpg" alt="image-transform" width="100%">
+        <img class="mobile-images" id="mobile-images" src="/images/mobile/image-transform.jpg" alt="image-transform" width="100%" height="auto">
+        <img class="desktop-images" src="/images/desktop/image-transform.jpg" alt="image-transform" width="100%" height="auto">
     
         </div>
     <div class="flexItem2" >
@@ -113,16 +116,19 @@
 
     <section class="gallery ">
     
-
-    <div><img class="mobile-images"  src="/images/mobile/image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles" width="100%"></div>
+      <div class="gallery-mobile"> 
+        <div><img class="mobile-images"  src="/images/mobile/image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles" width="100%" height="auto"></div>
+        <div><img  class="mobile-images" src="/images/mobile/image-gallery-orange.jpg" alt="image-gallery-orange" width="100%" height="auto"></div>
+        <div><img class="mobile-images"  src="/images/mobile/image-gallery-cone.jpg" alt="image-gallery-cone" width="100%" height="auto"></div>
+        <div><img  class="mobile-images" src="/images/mobile/image-gallery-sugar-cubes.jpg" alt="image-gallery-sugar-cubes" width="100%" height="auto"></div> 
+      </div>
+      
+      <div class="gallery-desktop">
     <div><img class="desktop-images"  src="/images/desktop/image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles" width="100%"></div>
-    <div><img  class="mobile-images" src="/images/mobile/image-gallery-orange.jpg" alt="image-gallery-orange" width="100%"></div>
     <div><img  class="desktop-images" src="/images/desktop/image-gallery-orange.jpg" alt="image-gallery-orange" width="100%"></div>
-    <div><img class="mobile-images"  src="/images/mobile/image-gallery-cone.jpg" alt="image-gallery-cone" width="100%"></div>
     <div><img class="desktop-images"  src="/images/desktop/image-gallery-cone.jpg" alt="image-gallery-cone" width="100%"></div>
-    <div><img  class="mobile-images" src="/images/mobile/image-gallery-sugar-cubes.jpg" alt="image-gallery-sugar-cubes" width="100%"></div> 
     <div><img  class="desktop-images" src="/images/desktop/image-gallery-sugarcubes.jpg" alt="image-gallery-sugar-cubes" width="100%"></div> 
-  
+      </div> 
 
     </section>
 

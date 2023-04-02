@@ -6,6 +6,7 @@
 
 body {
   width: 100%;
+  overflow-x: hidden;
   font-family: "Barlow", sans-serif;
 }
 
@@ -36,10 +37,16 @@ li a {
   font-size: 1, 5rem;
 }
 
+.background {
+  height: auto;
+  background: url(/images/mobile/image-header\ copy.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding-bottom: 15vh;
+  padding: 3vw;
+}
+
 .header {
-  background: url(/images/mobile/image-header.jpg) no-repeat;
-  background-size: contain;
-  height: 70vh;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -171,13 +178,13 @@ li a {
   color: hsl(210deg, 4%, 67%);
 }
 
-.gallery {
+.gallery-mobile {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
 }
-.gallery .mobile-images {
+.gallery-mobile .mobile-images {
   display: grid;
 }
 
@@ -203,17 +210,23 @@ li a {
   gap: 15px;
 }
 
-@media screen and (min-width: 484px) and (max-width: 1440px) {
+@media screen and (min-width: 800px) and (max-width: 1440px) {
   .mobile-images {
     display: none;
   }
+  .gallery-mobile {
+    display: none;
+  }
   .desktop-images {
-    display: flex;
+    display: block;
+  }
+  .background {
+    background: url(/images/desktop/image-header.jpg);
+    height: 800px;
   }
   .header {
-    background: url(/images/desktop/image-header.jpg) no-repeat;
-    background-size: cover;
-    height: 60vh;
+    height: 800px;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -225,6 +238,13 @@ li a {
   .header .header-menu-hamburger {
     display: none;
   }
+  .header .header-title {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .flexContainer {
     display: flex;
     flex-direction: row;
@@ -233,6 +253,12 @@ li a {
   }
   .flexItem2 {
     order: 1;
+  }
+  .flexItem1, .flexItem2, .flexItem3, .flexItem4, .flexItem5, .flexItem6 {
+    width: 50%;
+    height: 600px;
+    text-align: center;
+    align-self: center;
   }
   .flexItem1 {
     order: 2;
@@ -245,16 +271,13 @@ li a {
   }
   .flexItem5 {
     order: 5;
+    height: 800px;
   }
   .flexItem6 {
     order: 6;
+    height: 800px;
   }
-  .flexItem1, .flexItem2, .flexItem3, .flexItem4, .flexItem5, .flexItem6 {
-    width: 50%;
-    text-align: center;
-    align-self: center;
-  }
-  .gallery {
+  .gallery-desktop {
     display: flex;
     flex-direction: row;
   }

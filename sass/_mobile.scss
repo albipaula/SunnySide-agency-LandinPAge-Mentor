@@ -24,6 +24,7 @@ $primaryFont: 'Barlow', sans-serif;
 $secondaryFont: 'Fraunces';
 
 .desktop-images{display: none;}
+.header-menu-desktop { display:none}
 .body { 
 
 overflow-x:hidden;
@@ -46,7 +47,15 @@ font-size: 1,5rem;
     
 
 }
-
+.header-menu-mobile { 
+ 
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+     }
 
 .header {
    
@@ -58,14 +67,7 @@ font-size: 1,5rem;
     padding-bottom: 15vh;
     gap: 40px;
     
-   .header-menu-mobile { 
  
-   height: 100px;
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-    }
 
 .bar-btn { 
     font-size: 25px;

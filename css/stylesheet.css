@@ -31,6 +31,10 @@ li a {
   display: none;
 }
 
+.header-menu-desktop {
+  display: none;
+}
+
 .body {
   overflow-x: hidden;
   font-size: 1, 5rem;
@@ -45,6 +49,15 @@ li a {
   padding: 2vw;
 }
 
+.header-menu-mobile {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header {
   display: flex;
   justify-content: flex-start;
@@ -52,13 +65,6 @@ li a {
   padding-bottom: 15vh;
   gap: 40px;
   /*Estilo cuando el mouse pasa encima de cada link del menu*/
-}
-.header .header-menu-mobile {
-  height: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .header .bar-btn {
   font-size: 25px;
@@ -267,7 +273,7 @@ li a {
 }
 
 @media screen and (min-width: 800px) and (max-width: 1440px) {
-  #header-menu-mobile, .nav-menu, .bar-btn {
+  .header-menu-mobile {
     display: none;
   }
   .mobile-images {

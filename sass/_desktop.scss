@@ -22,7 +22,7 @@ $secondaryFont: fraunces;
 
 
 @media screen and (min-width:800px) and (max-width:1440px) {
-#header-menu-mobile  , .nav-menu , .bar-btn{ display:none}
+.header-menu-mobile { display:none}
 .mobile-images{ display:none;}
 .gallery-mobile{display: none;}
 .desktop-images {display:block; }

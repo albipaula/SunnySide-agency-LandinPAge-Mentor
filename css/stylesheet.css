@@ -51,42 +51,51 @@ li a {
   flex-direction: column;
   padding-bottom: 15vh;
   gap: 40px;
-}
-.header .header-menu-mobile {
   /*Estilo cuando el mouse pasa encima de cada link del menu*/
 }
-.header .header-menu-mobile ul {
-  display: none;
-}
-.header .header-menu-mobile input {
-  display: none;
-}
-.header .header-menu-mobile input:checked ~ ul {
-  display: block;
-}
-.header .header-menu-mobile li {
-  flex-direction: column;
-  gap: 40px;
-  background: hsl(0deg, 0%, 100%);
-  padding: 15vh;
-  margin: 0 10px 0 60px;
-}
-.header .header-menu-mobile ul {
-  margin-top: 0;
-  width: 90vw;
-  margin: 10px;
-}
-.header .header-menu-mobile li {
-  display: flex;
-  background: hsl(0deg, 0%, 100%);
+.header .header-menu-mobile {
+  height: 100px;
   width: 100%;
-  padding: 10px;
-  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.header .header-menu-mobile a {
+.header .bar-btn {
+  font-size: 25px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.header .nav-menu {
+  position: fixed;
+  width: 80%;
+  left: 10%;
+  right: 10%;
+  height: 0vh;
+  top: 100px;
+  background: hsl(0deg, 0%, 100%);
+  text-align: center;
+}
+.header .nav-menu li {
+  display: none;
+  line-height: 30px;
+  margin: 50px 0;
+  transition: all 0.5s;
+}
+.header .nav-menu a {
   color: hsl(232deg, 10%, 55%);
+  font-weight: 600;
 }
-.header .header-menu-mobile a:hover {
+.header .checkbox {
+  display: none;
+}
+.header #menu:checked ~ .nav-menu {
+  height: 41%;
+}
+.header #menu:checked ~ .nav-menu li {
+  display: block;
+  text-align: center;
+}
+.header a:hover {
   filter: brightness(110%);
   background-color: hsl(51deg, 100%, 49%);
   padding: 10px;

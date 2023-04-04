@@ -59,39 +59,62 @@ font-size: 1,5rem;
     gap: 40px;
     
    .header-menu-mobile { 
-
-    ul {display: none;}
-    input { display: none;}
-    input:checked ~ ul { display: block;}
-
-    li {
-    flex-direction: column;
-    gap: 40px;
-    background: $white;
-    padding: 15vh;
-    margin: 0 10px 0 60px;
+ 
+   height: 100px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
     }
 
+.bar-btn { 
+    font-size: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}    
+
+.nav-menu { 
+    position: fixed;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    height: 0vh;
+    top: 100px;
+    background: $white;
+    text-align: center;
+    
+    li { 
+
+        display: none;
+        line-height: 30px;
+        margin: 50px 0;
+        transition: all .5s;
+    }
+
+    a { 
+        color: $darkGrayishBlue; 
+        font-weight: 600;}
+
+}
+
+.checkbox{ display: none}
  
-      
-      ul{
-        margin-top:0;
-       
-        width: 90vw;
-        margin: 10px;
-      
-      }
-      
-      
-      li {
-        display: flex;
-        background: $white;
-        width: 100%;
-        padding: 10px;
-        list-style: none;
-     
-      }
-      a { color: $darkGrayishBlue;}
+
+#menu:checked  ~ .nav-menu { 
+
+    height: 41%;
+    
+ 
+   
+ }     
+#menu:checked ~.nav-menu li { 
+
+    display: block;
+
+    text-align: center;
+}      
+   
+    
       
       /*Estilo cuando el mouse pasa encima de cada link del menu*/
       a:hover {
@@ -105,7 +128,7 @@ font-size: 1,5rem;
 
  }
  
-    }
+    
 
     
     

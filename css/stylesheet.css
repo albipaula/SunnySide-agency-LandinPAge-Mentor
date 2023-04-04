@@ -53,13 +53,17 @@ li a {
   padding-inline-start: 0 30px;
   margin-top: 150px;
   text-align: center;
-  text-align: center;
   color: hsl(0deg, 0%, 100%);
   text-transform: uppercase;
   font-family: "Fraunces";
   font-size: 2rem;
-  margin-top: 150px;
   font-weight: 900;
+}
+.banner-text h1 {
+  margin-bottom: 90px;
+}
+.banner-text .arrow-icon {
+  margin-top: 20px;
 }
 
 .header {
@@ -69,7 +73,6 @@ li a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /*Estilo cuando el mouse pasa encima de cada link del menu*/
 }
 .header .bar-btn {
   font-size: 25px;
@@ -115,15 +118,6 @@ li a {
   text-transform: uppercase;
 }
 
-.header-title {
-  text-align: center;
-  color: hsl(0deg, 0%, 100%);
-  text-transform: uppercase;
-  font-family: "Fraunces";
-  font-size: 2rem;
-  margin-top: 30px;
-}
-
 .header-menu {
   display: flex;
   gap: 30px;
@@ -133,10 +127,6 @@ li a {
 
 .header-menu-link, .header-menu-link--contact {
   display: none;
-}
-
-.arrow-icon {
-  margin-top: 300px;
 }
 
 .header-menu-logo {
@@ -326,6 +316,7 @@ li a {
   .header .header-menu-desktop {
     display: flex;
     justify-content: space-between;
+    padding: 20px;
   }
   .header .header-menu-desktop .header-menu-logo {
     display: flex;

@@ -50,16 +50,23 @@ font-size: 1,5rem;
 
         padding-inline-start: 0 30px;
         margin-top: 150px;
-        text-align: center;
+      
         text-align: center;
         color: $white;
         text-transform: uppercase;
         font-family: $secondaryFont;
         font-size: 2rem;
-        margin-top: 150px;
         font-weight: 900;
+
+     h1 { margin-bottom: 90px;}   
         
-        }       
+.arrow-icon { 
+
+    margin-top: 20px;
+
+        }
+}  
+
 .header {
    
    
@@ -121,10 +128,8 @@ font-size: 1,5rem;
     text-align: center;
 }      
    
-    
-      
-      /*Estilo cuando el mouse pasa encima de cada link del menu*/
-      a:hover {
+
+a:hover {
         filter: brightness(110%);
         background-color: $Yellow;
         padding: 10px;
@@ -134,27 +139,6 @@ font-size: 1,5rem;
       }
 
  }
- 
-    
-
-    
-    
-
-   .header-title { 
-
-    text-align: center;
-    color: $white;
-    text-transform: uppercase;
-    font-family: $secondaryFont;
-    font-size: 2rem;
-    margin-top: 30px;
-  
-   
-    
-    
-    
-   } 
-
 
 .header-menu {
 
@@ -169,11 +153,7 @@ justify-content: space-evenly;
    display: none;
 }
 
-.arrow-icon { 
 
-    
-    margin-top: 300px;
-}
 
 .header-menu-logo {
     flex-grow: 1;

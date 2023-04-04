@@ -267,6 +267,9 @@ li a {
 }
 
 @media screen and (min-width: 800px) and (max-width: 1440px) {
+  #header-menu-mobile, .nav-menu, .bar-btn {
+    display: none;
+  }
   .mobile-images {
     display: none;
   }
@@ -275,9 +278,6 @@ li a {
   }
   .desktop-images {
     display: block;
-  }
-  .header-menu-mobile {
-    display: none;
   }
   a:hover {
     color: hsl(212deg, 27%, 19%);
@@ -297,15 +297,39 @@ li a {
   .header {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
   }
   .header .header-menu-link, .header .header-menu-link--contact {
     display: flex;
   }
-  .header .header-menu-hamburger {
-    display: none;
+  .header .header-menu-desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header .header-menu-desktop .header-menu-logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .header .header-menu-desktop .header-menu-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 70px;
+  }
+  .header .header-menu-desktop .header-menu-nav .header-menu-link--contact {
+    justify-content: center;
+    background: hsl(0deg, 0%, 100%);
+    padding: 12px;
+    width: 140px;
+    color: hsl(198deg, 62%, 26%);
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .header .header-menu-desktop .header-menu-nav .header-menu-link--contact a {
+    color: hsl(198deg, 62%, 26%);
   }
   .header .header-title {
     display: flex;

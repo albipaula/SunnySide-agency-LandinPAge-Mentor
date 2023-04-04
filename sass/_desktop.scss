@@ -22,10 +22,11 @@ $secondaryFont: fraunces;
 
 
 @media screen and (min-width:800px) and (max-width:1440px) {
+#header-menu-mobile  , .nav-menu , .bar-btn{ display:none}
 .mobile-images{ display:none;}
 .gallery-mobile{display: none;}
 .desktop-images {display:block; }
-.header-menu-mobile { display:none}
+
 
 a:hover { 
     color:$veryDarkDesaturatedBlue;
@@ -54,16 +55,44 @@ a{ color: $white;}
         
         width: 100%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         flex-direction: column;
-        gap: 10px;
+        gap: 30px;
         
         .header-menu-link , .header-menu-link--contact {
             display: flex;
+            
          }
     
-         .header-menu-hamburger {display: none;}
-       
+  .header-menu-desktop { 
+
+    display: flex;
+    justify-content: space-between; 
+
+.header-menu-logo { display: flex; justify-content: flex-start;}
+
+.header-menu-nav { 
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 70px;
+
+.header-menu-link--contact { 
+justify-content: center;
+background: $white;
+padding: 12px;
+width: 140px;
+color: $darkBlue;
+border-radius: 25px;
+text-transform: uppercase;
+font-weight: 700;
+
+a{ color: $darkBlue;}
+
+}    
+}
+}
 .header-title { 
 display: flex; 
 flex-direction: column;

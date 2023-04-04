@@ -40,15 +40,6 @@ li a {
   font-size: 1, 5rem;
 }
 
-.background {
-  height: auto;
-  background: url(/images/mobile/image-header\ copy.jpg) no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  padding-bottom: 15vh;
-  padding: 2vw;
-}
-
 .header-menu-mobile {
   height: 100px;
   width: 100%;
@@ -309,9 +300,17 @@ li a {
   a {
     color: hsl(0deg, 0%, 100%);
   }
-  .background {
-    background: url(/images/desktop/image-header.jpg);
-    height: 800px;
+  .banner-text {
+    padding-inline-start: 0 30px;
+    margin-top: 150px;
+    text-align: center;
+    text-align: center;
+    color: hsl(0deg, 0%, 100%);
+    text-transform: uppercase;
+    font-family: fraunces;
+    font-size: 2rem;
+    margin-top: 150px;
+    font-weight: 900;
   }
   .header {
     width: 100%;
@@ -349,13 +348,6 @@ li a {
   }
   .header .header-menu-desktop .header-menu-nav .header-menu-link--contact a {
     color: hsl(198deg, 62%, 26%);
-  }
-  .header .header-title {
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    flex-wrap: wrap;
-    justify-content: center;
   }
   .flexContainer {
     display: flex;

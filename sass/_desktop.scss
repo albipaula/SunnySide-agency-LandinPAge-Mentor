@@ -43,13 +43,22 @@ a:hover {
 
 a{ color: $white;}
 
-.background { 
 
-    background: url(/images/desktop/image-header.jpg) ;
 
-    height: 800px;
-}
+.banner-text { 
 
+    padding-inline-start: 0 30px;
+    margin-top: 150px;
+    text-align: center;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    font-family: $secondaryFont;
+    font-size: 2rem;
+    margin-top: 150px;
+    font-weight: 900;
+    
+    }     
     .header {
 
         
@@ -93,12 +102,7 @@ a{ color: $darkBlue;}
 }    
 }
 }
-.header-title { 
-display: flex; 
-flex-direction: column;
-height: 200px;
-flex-wrap: wrap;
-justify-content: center;}
+
 
     
 }

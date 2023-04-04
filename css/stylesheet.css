@@ -58,6 +58,19 @@ li a {
   align-items: center;
 }
 
+.banner-text {
+  padding-inline-start: 0 30px;
+  margin-top: 150px;
+  text-align: center;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+  text-transform: uppercase;
+  font-family: "Fraunces";
+  font-size: 2rem;
+  margin-top: 150px;
+  font-weight: 900;
+}
+
 .header {
   display: flex;
   justify-content: flex-start;

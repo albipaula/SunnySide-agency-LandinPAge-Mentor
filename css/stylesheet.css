@@ -252,6 +252,10 @@ justify-content: space-evenly;
   color: hsl(210deg, 4%, 67%);
 }
 
+.client-name {
+  font-weight: 900;
+}
+
 .gallery-mobile {
   display: grid;
   width: 100%;
@@ -404,6 +408,12 @@ justify-content: space-evenly;
   .flexContainer-testimonials {
     display: flex;
     padding: 30px;
+    align-items: center;
+  }
+  .flexContainer-testimonials .client1, .flexContainer-testimonials .client2, .flexContainer-testimonials .client3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 

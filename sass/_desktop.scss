@@ -75,44 +75,42 @@ a{ color: $white;}
             
          }
     
-  .header-menu-desktop { 
-
-    display: flex;
-    justify-content: space-between; 
-    padding: 20px;
-
-.header-menu-logo { display: flex; justify-content: flex-start;}
-
-.header-menu-nav { 
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 70px;
-
-.header-menu-link--contact { 
-justify-content: center;
-background: $white;
-padding: 12px;
-width: 140px;
-color: $darkBlue;
-border-radius: 25px;
-text-transform: uppercase;
-font-weight: 700;
-
-a{ color: $darkBlue;}
-
-}    
+        .header-menu-desktop { 
+        
+            display: flex;
+            justify-content: space-between; 
+            padding: 20px;
+        
+        .header-menu-logo { 
+            display: flex; 
+            justify-content: flex-start;}
+        
+        .header-menu-nav { 
+        
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 70px;
+        
+        .header-menu-link--contact { 
+            justify-content: center;
+            background: $white;
+            padding: 12px;
+            width: 140px;
+            color: $darkBlue;
+            border-radius: 25px;
+            text-transform: uppercase;
+            font-weight: 700;
+        
+            a{ color: $darkBlue;}}    
+        
+    }
 }
-}
-
-
-    
+  
 }
 
 .flexContainer {
     display: flex;
-
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
@@ -121,8 +119,6 @@ a{ color: $darkBlue;}
 .flexItem2 {
     order: 1;
 }
-
-
 
 
 .flexItem1, .flexItem2 , .flexItem3 , .flexItem4 , .flexItem5 , .flexItem6 {
@@ -142,12 +138,19 @@ a{ color: $darkBlue;}
     flex-direction: row;
 }
 
+
 .flexContainer-testimonials {
 
     display: flex; 
     padding: 30px;
+    align-items: center;
+
+.client1 ,.client2 , .client3 {display: flex;
+flex-direction: column;
+align-items: center;}
 
 
 }
+
 
 }

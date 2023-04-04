@@ -267,6 +267,7 @@ justify-content: space-evenly;
 .testimonials {
     padding: 30px;
     text-align: center;
+    
 
     h4 {text-align: center;
          padding-bottom: 30px; 
@@ -287,10 +288,13 @@ justify-content: space-evenly;
         }
 
          .profession {color: $grayishBlue;}
+        
 }
 
 
-
+.client-name { 
+    font-weight: 900;
+ }
 .gallery-mobile {
 
 display: grid;

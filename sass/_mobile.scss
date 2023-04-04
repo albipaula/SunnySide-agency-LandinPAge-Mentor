@@ -93,16 +93,19 @@ font-size: 1,5rem;
     top: 100px;
     background: $white;
     text-align: center;
-    
+  
+
 &::before  {
     content: '';
     position: fixed;
-    top: 10%;
-    left: 50%;
+    top: 12%;
+    left: 85.5%;
     width: 0;
-    height: 0;
-    border: 13px solid transparent;
-    border-bottom-color: #32557f;
+    height: 1px;
+    border: 23px solid transparent;
+    border-bottom-color: $white;
+    transform: rotate(135deg);
+
     border-top: 0;
     margin-left: -13px;
     margin-top: -13px;
@@ -128,11 +131,12 @@ font-size: 1,5rem;
 .nav-menu--contact a { 
     justify-content: center;
     background: $Yellow;
-    padding: 12px;
-    width: 140px;
+    padding: 16px;
+    width: 160px;
     color: hsl(212, 27%, 19%);
     border-radius: 25px;
     text-transform: uppercase;
+    font-family: $secondaryFont;
     font-weight: 700;
     
 
@@ -283,11 +287,12 @@ justify-content: space-evenly;
             padding: 20px;
         }
          p{
-            padding: 10px; 
+            padding: 15px; 
             line-height: 20px; 
         }
 
          .profession {color: $grayishBlue;}
+         .client1 { padding-top: 25px;}
         
 }
 

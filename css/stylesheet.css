@@ -43,6 +43,7 @@ li a {
 .header-menu-mobile {
   height: 100px;
   width: 100%;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

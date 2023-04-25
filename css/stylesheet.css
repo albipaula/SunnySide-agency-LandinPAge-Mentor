@@ -27,246 +27,255 @@ li a {
   color: hsl(228deg, 45%, 44%);
 }
 
-.desktop-images {
-  display: none;
+@media screen and (min-width: 340px) and (max-width: 800px) {
+  .desktop-images {
+    display: none;
+  }
+  .header-menu-desktop {
+    display: none;
+  }
+  .body {
+    overflow-x: hidden;
+    font-size: 1, 5rem;
+  }
+  .header-menu-mobile {
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .banner-text {
+    padding-inline-start: 0 30px;
+    margin-top: 150px;
+    text-align: center;
+    color: hsl(0deg, 0%, 100%);
+    text-transform: uppercase;
+    font-family: "Fraunces";
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .banner-text h1 {
+    margin-bottom: 90px;
+  }
+  .banner-text .arrow-icon {
+    margin-top: 20px;
+  }
+  .header {
+    width: 100%;
+    height: 100vh;
+    background: url(/images/mobile/image-header\ copy.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .header .bar-btn {
+    font-size: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .header .nav-menu {
+    position: fixed;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    height: 0vh;
+    top: 100px;
+    background: hsl(0deg, 0%, 100%);
+    text-align: center;
+  }
+  .header .nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all 0.5s;
+  }
+  .header .nav-menu a {
+    color: hsl(232deg, 10%, 55%);
+    font-weight: 600;
+  }
+  .header #menu:checked ~ .nav-menu:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid #ffffff;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #fdffff;
+    border-bottom: 15px solid transparent;
+    right: -16px;
+    top: 0px;
+  }
+  .header #menu:checked ~ .nav-menu:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid #ffffff;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #fdffff;
+    border-bottom: 15px solid transparent;
+    right: -16px;
+    top: 0px;
+  }
+  .header .checkbox {
+    display: none;
+  }
+  .header #menu:checked ~ .nav-menu {
+    height: 41%;
+  }
+  .header #menu:checked ~ .nav-menu li {
+    display: block;
+    text-align: center;
+  }
+  .header a:hover {
+    filter: brightness(110%);
+    background-color: hsl(51deg, 100%, 49%);
+    padding: 10px;
+    border-radius: 10px;
+    width: 90px;
+    text-transform: uppercase;
+  }
+  .header-menu {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    justify-content: space-evenly;
+  }
+  .header-menu-link, .header-menu-link--contact {
+    display: none;
+  }
+  .header-menu-logo {
+    flex-grow: 1;
+    padding-left: 10px;
+  }
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .flexItem2, .flexItem4 {
+    background: hsl(0deg, 0%, 100%);
+    height: 400px;
+    padding: 5vh;
+    font-family: "Fraunces";
+    align-items: center;
+    text-align: center;
+    display: flex;
+  }
+  .flexItem2 p, .flexItem4 p {
+    padding: 45px;
+    color: hsl(232deg, 10%, 55%);
+  }
+  .flexItem2 h2, .flexItem4 h2 {
+    text-align: center;
+    font-weight: 800;
+    display: inline-flex;
+  }
+  .flexItem2 .learnMore, .flexItem4 .learnMore {
+    text-transform: uppercase;
+    text-decoration: 3px underline rgba(255, 255, 0, 0.376);
+    font-weight: bolder;
+  }
+  .flexItem4 span {
+    text-transform: uppercase;
+    text-decoration: 5px underline rgba(244, 107, 212, 0.376);
+    font-weight: bolder;
+    text-shadow: 2px solid black;
+  }
+  .flexItem5 {
+    background: url(/images/mobile/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: hsl(167deg, 40%, 24%);
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 35px;
+  }
+  .flexItem5 p {
+    padding: 10px;
+  }
+  .flexItem6 {
+    background: url(/images/mobile/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    color: hsl(198deg, 62%, 26%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 35px;
+  }
+  .flexItem6 p {
+    padding: 10px;
+  }
+  .testimonials {
+    padding: 30px;
+    text-align: center;
+  }
+  .testimonials h4 {
+    text-align: center;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    color: hsl(210deg, 4%, 67%);
+    font-family: "Fraunces";
+    letter-spacing: 4px;
+    font-weight: 800;
+  }
+  .testimonials img {
+    border-radius: 85px;
+    width: 100px;
+    padding: 20px;
+  }
+  .testimonials p {
+    padding: 10px;
+    line-height: 20px;
+  }
+  .testimonials .profession {
+    color: hsl(210deg, 4%, 67%);
+  }
+  .gallery-mobile {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .gallery-mobile .mobile-images {
+    display: grid;
+  }
+  .footer {
+    background: hsl(167deg, 35%, 65%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    justify-content: space-around;
+  }
+  .footer .footer-menu-logo {
+    padding-top: 40px;
+  }
+  .footer .footer-menu {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 60px;
+  }
+  .footer .footer-menu a {
+    color: hsl(167deg, 40%, 24%);
+  }
+  .footer .footer-menu .footer-menu-contacto {
+    display: none;
+  }
+  .footer .footer-menu--socialMedia {
+    display: flex;
+    gap: 15px;
+  }
 }
-
-.header-menu-desktop {
-  display: none;
-}
-
-.body {
-  overflow-x: hidden;
-  font-size: 1, 5rem;
-}
-
-.header-menu-mobile {
-  height: 100px;
-  width: 100%;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.banner-text {
-  padding-inline-start: 0 30px;
-  margin-top: 150px;
-  text-align: center;
-  color: hsl(0deg, 0%, 100%);
-  text-transform: uppercase;
-  font-family: "Fraunces";
-  font-size: 2rem;
-  font-weight: 900;
-}
-.banner-text h1 {
-  margin-bottom: 90px;
-}
-.banner-text .arrow-icon {
-  margin-top: 20px;
-}
-
-.header {
-  width: 100%;
-  height: 100vh;
-  background: url(/images/mobile/image-header\ copy.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.header .bar-btn {
-  font-size: 25px;
-  margin-right: 20px;
-  cursor: pointer;
-}
-.header .nav-menu {
-  position: fixed;
-  width: 80%;
-  left: 10%;
-  right: 10%;
-  height: 0vh;
-  top: 100px;
-  background: hsl(0deg, 0%, 100%);
-  text-align: center;
-}
-.header .nav-menu li {
-  display: none;
-  line-height: 30px;
-  margin: 50px 0;
-  transition: all 0.5s;
-}
-.header .nav-menu a {
-  color: hsl(232deg, 10%, 55%);
-  font-weight: 600;
-}
-.header .checkbox {
-  display: none;
-}
-.header #menu:checked ~ .nav-menu {
-  height: 41%;
-}
-.header #menu:checked ~ .nav-menu li {
-  display: block;
-  text-align: center;
-}
-.header a:hover {
-  filter: brightness(110%);
-  background-color: hsl(51deg, 100%, 49%);
-  padding: 10px;
-  border-radius: 10px;
-  width: 90px;
-  text-transform: uppercase;
-}
-
-.header-menu {
-  display: flex;
-  gap: 30px;
-  padding: 20px;
-  justify-content: space-evenly;
-}
-
-.header-menu-link, .header-menu-link--contact {
-  display: none;
-}
-
-.header-menu-logo {
-  flex-grow: 1;
-  padding-left: 10px;
-}
-
-.flexContainer {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-.flexItem2, .flexItem4 {
-  background: hsl(0deg, 0%, 100%);
-  height: 400px;
-  padding: 5vh;
-  font-family: "Fraunces";
-  align-items: center;
-  text-align: center;
-  display: flex;
-}
-.flexItem2 p, .flexItem4 p {
-  padding: 45px;
-  color: hsl(232deg, 10%, 55%);
-}
-.flexItem2 h2, .flexItem4 h2 {
-  text-align: center;
-  font-weight: 800;
-  display: inline-flex;
-}
-.flexItem2 .learnMore, .flexItem4 .learnMore {
-  text-transform: uppercase;
-  text-decoration: 3px underline rgba(255, 255, 0, 0.376);
-  font-weight: bolder;
-}
-
-.flexItem4 span {
-  text-transform: uppercase;
-  text-decoration: 5px underline rgba(244, 107, 212, 0.376);
-  font-weight: bolder;
-  text-shadow: 2px solid black;
-}
-
-.flexItem5 {
-  background: url(/images/mobile/image-graphic-design.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: hsl(167deg, 40%, 24%);
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 35px;
-}
-.flexItem5 p {
-  padding: 10px;
-}
-
-.flexItem6 {
-  background: url(/images/mobile/image-photography.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 70vh;
-  color: hsl(198deg, 62%, 26%);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 35px;
-}
-.flexItem6 p {
-  padding: 10px;
-}
-
-.testimonials {
-  padding: 30px;
-  text-align: center;
-}
-.testimonials h4 {
-  text-align: center;
-  padding-bottom: 30px;
-  text-transform: uppercase;
-  color: hsl(210deg, 4%, 67%);
-  font-family: "Fraunces";
-  letter-spacing: 4px;
-  font-weight: 800;
-}
-.testimonials img {
-  border-radius: 85px;
-  width: 100px;
-  padding: 20px;
-}
-.testimonials p {
-  padding: 10px;
-  line-height: 20px;
-}
-.testimonials .profession {
-  color: hsl(210deg, 4%, 67%);
-}
-
-.gallery-mobile {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-}
-.gallery-mobile .mobile-images {
-  display: grid;
-}
-
-.footer {
-  background: hsl(167deg, 35%, 65%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 300px;
-  justify-content: space-around;
-}
-.footer .footer-menu-logo {
-  padding-top: 40px;
-}
-.footer .footer-menu {
-  display: flex;
-  flex-direction: row;
-  padding: 30px;
-  gap: 60px;
-}
-.footer .footer-menu a {
-  color: hsl(167deg, 40%, 24%);
-}
-.footer .footer-menu .footer-menu-contacto {
-  display: none;
-}
-.footer .footer-menu--socialMedia {
-  display: flex;
-  gap: 15px;
-}
-
 @media screen and (min-width: 800px) and (max-width: 1440px) {
   .header-menu-mobile {
     display: none;

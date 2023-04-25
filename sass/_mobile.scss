@@ -23,6 +23,7 @@ $primaryFont: 'Barlow', sans-serif;
 
 $secondaryFont: 'Fraunces';
 
+@media screen and (min-width:340px) and (max-width:800px) {
 .desktop-images{display: none;}
 .header-menu-desktop { display:none}
 .body { 
@@ -36,15 +37,19 @@ font-size: 1,5rem;
 }
 
 
+
 .header-menu-mobile { 
  
-    height: 100px;
+    height: auto;
     width: 100%;
     padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+
+
      }
 
      .banner-text { 
@@ -112,6 +117,35 @@ font-size: 1,5rem;
 
 }
 
+
+#menu:checked  ~ .nav-menu:before { 
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid #ffffff;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #fdffff;
+    border-bottom: 15px solid transparent;
+    right: -16px;
+    top: 0px;
+ 
+    
+}
+#menu:checked  ~ .nav-menu:after { 
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid #ffffff;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #fdffff;
+    border-bottom: 15px solid transparent;
+    right: -16px;
+    top: 0px;
+ 
+    
+}
 .checkbox{ display: none}
  
 
@@ -303,4 +337,5 @@ grid-template-rows: 1fr ;
     gap: 15px;
 }
 
+}
 }

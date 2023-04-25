@@ -66,7 +66,7 @@ li a {
   .header {
     width: 100%;
     height: 100vh;
-    background: url(/images/mobile/image-header\ copy.jpg);
+    background: url(./images/mobile/image-header\ copy.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

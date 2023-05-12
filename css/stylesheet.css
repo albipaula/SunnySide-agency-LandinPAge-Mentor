@@ -18,15 +18,6 @@ li a {
   text-decoration: none;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228deg, 45%, 44%);
-}
-
 .testimonials {
   padding: 30px;
   text-align: center;
@@ -51,6 +42,43 @@ li a {
 }
 .testimonials .profession {
   color: hsl(210deg, 4%, 67%);
+}
+
+.footer {
+  background: hsl(167deg, 35%, 65%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  justify-content: space-around;
+}
+.footer .footer-menu-logo {
+  padding-top: 40px;
+}
+.footer .footer-menu {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  gap: 60px;
+}
+.footer .footer-menu a {
+  color: hsl(167deg, 40%, 24%);
+}
+.footer .footer-menu .footer-menu-contacto {
+  display: none;
+}
+.footer .footer-menu--socialMedia {
+  display: flex;
+  gap: 15px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
 }
 
 @media screen and (min-width: 340px) and (max-width: 800px) {
@@ -243,31 +271,6 @@ li a {
   .flexItem6 p {
     padding: 10px;
   }
-  .testimonials {
-    padding: 30px;
-    text-align: center;
-  }
-  .testimonials h4 {
-    text-align: center;
-    padding-bottom: 30px;
-    text-transform: uppercase;
-    color: hsl(210deg, 4%, 67%);
-    font-family: "fraunces";
-    letter-spacing: 4px;
-    font-weight: 800;
-  }
-  .testimonials img {
-    border-radius: 85px;
-    width: 100px;
-    padding: 20px;
-  }
-  .testimonials p {
-    padding: 10px;
-    line-height: 20px;
-  }
-  .testimonials .profession {
-    color: hsl(210deg, 4%, 67%);
-  }
   .gallery-mobile {
     display: grid;
     width: 100%;
@@ -276,33 +279,6 @@ li a {
   }
   .gallery-mobile .mobile-images {
     display: grid;
-  }
-  .footer {
-    background: hsl(167deg, 35%, 65%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 300px;
-    justify-content: space-around;
-  }
-  .footer .footer-menu-logo {
-    padding-top: 40px;
-  }
-  .footer .footer-menu {
-    display: flex;
-    flex-direction: row;
-    padding: 30px;
-    gap: 60px;
-  }
-  .footer .footer-menu a {
-    color: hsl(167deg, 40%, 24%);
-  }
-  .footer .footer-menu .footer-menu-contacto {
-    display: none;
-  }
-  .footer .footer-menu--socialMedia {
-    display: flex;
-    gap: 15px;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1800px) {

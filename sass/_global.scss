@@ -7,6 +7,7 @@ $darkBlue: hsl(198, 62%, 26%); // photography text
 $darkModerateCyan: hsl(168, 34%, 41%); //footer
 
 
+$extraColor: hsl(167, 35%, 65%);
 // Secondary colors
 
 
@@ -56,8 +57,59 @@ li {
 }
 
 
+.testimonials {
+    padding: 30px;
+    text-align: center;
 
+    h4 {text-align: center;
+         padding-bottom: 30px; 
+         text-transform: uppercase;
+        color: $grayishBlue; 
+        font-family: $secondaryFont; 
+        letter-spacing: 4px;
+        font-weight: 800;
+    }
 
+         img { border-radius: 85px; 
+            width: 100px; 
+            padding: 20px;
+        }
+         p{
+            padding: 10px; 
+            line-height: 20px; 
+        }
+
+         .profession {color: $grayishBlue;}
+}
+
+.footer { 
+    
+    background:$extraColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    justify-content: space-around;
+    
+    .footer-menu-logo {padding-top: 40px;}
+.footer-menu { 
+
+    display: flex;
+
+    flex-direction: row;
+    padding: 30px;
+    gap: 60px;
+    a{color: $darkdesaturatedCyan;}
+    .footer-menu-contacto {display: none;}
+   
+}
+
+.footer-menu--socialMedia {
+    display: flex;
+    gap: 15px;
+}
+
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
